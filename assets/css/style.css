@@ -2,69 +2,70 @@
   margin-left:43%;
   margin-top: 25%;
   width:250px;
+
+/* dictates time of shrink on click */
+  transition-duration:3000ms;
+ -ms-transition-duration:3000ms;
+ -webkit-transition-duration:3000ms;
+ -o-transition-duration:3000ms;
+ -moz-transition-duration:3000ms;
+}
+
+/* shrinking potion */
+.potion.shrink {
+  transform:scale(0,0);
+  -ms-transform:scale(0,0); /* IE 9 */
+  -webkit-transform:scale(0,0); /* Safari and Chrome */
+  -o-transform:scale(0,0); /* Opera */
+  -moz-transform:scale(0,0); /* Firefox */
 }
 
 body {
   background-color: #111217;
  }
 
-
-  body .fire {
+ /* Start cloud animation */
+ /* ==================================================================== */
+   .cloud {
     position: absolute;
     top: 30%;
     left: 48.5%;
     transform: translate(-50%, -25%);
     height: 20vw;
-    width: 20vw; }
-    body .fire .flames {
+    width: 20vw;
+
+  }
+     .cloud .bubbles {
       position: absolute;
       bottom: 40%;
       left: 50%;
       width: 45%;
       height: 45%;
       transform: translateX(-50%) rotate(45deg); }
-      body .fire .flames .flame {
+       .cloud .bubbles .bubble {
         position: absolute;
         right: 0%;
         bottom: 0%;
         width: 0%;
         height: 0%;
         background-color: #64ffff;
-        border-radius: 100px; }
-        body .fire .flames .flame:nth-child(2n + 1) {
-          animation: flameodd 2.5s ease-in infinite; }
-        body .fire .flames .flame:nth-child(2n) {
-          animation: flameeven 3.5s ease-in infinite; }
-        body .fire .flames .flame:nth-child(1) {
+        border-radius: 100px;
+       }
+         .cloud .bubbles .bubble:nth-child(2n + 1) {
+          animation: bubbleodd 2.5s ease-in infinite; }
+         .cloud .bubbles .bubble:nth-child(2n) {
+          animation: bubbleeven 3.5s ease-in infinite; }
+         .cloud .bubbles .bubble:nth-child(1) {
           animation-delay: 0s; }
-        body .fire .flames .flame:nth-child(2) {
+         .cloud .bubbles .bubble:nth-child(2) {
           animation-delay: 0.375s; }
-        body .fire .flames .flame:nth-child(3) {
+        .cloud .bubbles .bubble:nth-child(3) {
           animation-delay: 0.75s; }
-        body .fire .flames .flame:nth-child(4) {
+         .cloud .bubbles .bubble:nth-child(4) {
           animation-delay: 1.125s; }
-    /*body .fire .logs {
-      position: absolute;
-      bottom: 25%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 15%; }
-      body .fire .logs:before, body .fire .logs:after {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(20deg);
-        height: 100%;
-        width: 100%;
-        border-radius: 1vw;
-        background-color: #70392F; }
-      body .fire .logs:before {
-        transform: translate(-50%, -50%) rotate(-20deg);
-        background-color: #612E25; }*/
 
-@keyframes flameodd {
+
+@keyframes bubbleodd {
   0%, 100% {
     width: 0%;
     height: 0%; }
@@ -89,7 +90,7 @@ body {
   100% {
     right: 150%;
     bottom: 170%; } }
-@keyframes flameeven {
+@keyframes bubbleeven {
   0%, 100% {
     width: 0%;
     height: 0%; }
@@ -114,3 +115,5 @@ body {
   100% {
     right: 170%;
     bottom: 150%; } }
+
+/* ==================================================================== */

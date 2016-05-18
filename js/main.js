@@ -1,8 +1,13 @@
-window.onload = function initElement() {
+$( document ).ready(function() {
 
-  var p = document.getElementById("potion");
-  p.onclick = showAlert;
-};
-function showAlert() {
-  console.log("I work");
-}
+  var p = $("#potion").click(function() {
+    console.log("I work");
+     $('.potion').addClass('shrink');
+
+     $( ".bubbles" ).fadeOut( 2000);
+//      $( ".bubbles" ).fadeOut( "1500", function() {
+//   // Animation complete.
+// });
+
+  });
+});
