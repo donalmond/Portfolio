@@ -1,13 +1,44 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
   var p = $("#potion").click(function() {
     console.log("I work");
-     $('.potion').addClass('shrink');
-     $( ".bubbles" ).fadeOut( 2000);
-     $( ".castle" ).addClass('hide');
+    $('.potion').addClass('shrink');
+    $(".bubbles").fadeOut(2000);
+    $(".castle").addClass('hide');
+
+    $(".test").addClass('hideme');
+
+
+    $(".hidden").css("display", "block")
+
+    var p = $("body").mousemove(function() {
+
+      $(".castle").addClass('float');
+    });
   });
 
+
+
+// "https://www.youtube.com/watch?v=DVg2EJvvlF8"
+  $(".dream").click(function(){
+    var link = $(this);
+      var target = link.attr("target");
+
+      if($.trim(target).length > 0)
+      {
+        window.open(link.attr("href"), target);
+      }
+      else
+      {
+         window.location = link.attr("href");
+      }
+
+      event.preventDefault();  });
 });
+
+
+
+
 
 // var leftIndex = 0;
 // var rightIndex = 0;
@@ -43,5 +74,5 @@ $( document ).ready(function() {
 //   $('.castle').css("top", leftIndex+'px' )
 //   leftIndex ++;
 // };
-// 
+//
 // })
