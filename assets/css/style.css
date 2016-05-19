@@ -1,14 +1,39 @@
+.castle {
+  z-index: 1;
+  position: absolute;
+  right:32%;
+  margin-top: 15%;
+  width:500px;
+  transform: scale(0);
+
+
+  transition-duration:1000ms;
+ -ms-transition-duration:1000ms;
+ -webkit-transition-duration:1000ms;
+ -o-transition-duration:1000ms;
+ -moz-transition-duration:1000ms;
+}
+
+.castle.hide{
+  transform:scale(1,1);
+  -ms-transform:scale(1,1); /* IE 9 */
+  -webkit-transform:scale(1,1); /* Safari and Chrome */
+  -o-transform:scale(1,1); /* Opera */
+  -moz-transform:scale(1,1); /* Firefox */
+}
+
 .potion {
+  z-index: 20;
   margin-left:43%;
   margin-top: 25%;
   width:250px;
 
 /* dictates time of shrink on click */
-  transition-duration:3000ms;
- -ms-transition-duration:3000ms;
- -webkit-transition-duration:3000ms;
- -o-transition-duration:3000ms;
- -moz-transition-duration:3000ms;
+  transition-duration:1000ms;
+ -ms-transition-duration:1000ms;
+ -webkit-transition-duration:1000ms;
+ -o-transition-duration:1000ms;
+ -moz-transition-duration:1000ms;
 }
 
 /* shrinking potion */
@@ -42,6 +67,7 @@ body {
       width: 45%;
       height: 45%;
       transform: translateX(-50%) rotate(45deg); }
+
        .cloud .bubbles .bubble {
         position: absolute;
         right: 0%;
