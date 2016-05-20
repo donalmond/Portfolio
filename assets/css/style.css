@@ -1,7 +1,42 @@
 
-.test{
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+}
+
+h2 {
+  margin: 0;
+}
+
+.bio {
+  font-family: 'Oswald', sans-serif; font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+margin-top: 5%
+}
+.bio:hover {
+  color:black;
+}
+.bio .dream:hover {
+  color:#BE75FF;
+  cursor: pointer;
+  text-decoration: none;
+}
+.dream {
+  text-decoration: none;
+color:white;
+}
+
+.whitesidediv{
 right: 0px;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   width: 50vw;
   height:100vh;
@@ -17,7 +52,6 @@ right: 0px;
   opacity: 1;
   /*display:block;*/
 }
-
 footer{
   text-align: center;
   margin-top: 4%;
@@ -27,42 +61,39 @@ footer{
   font-family: 'Oswald', sans-serif; font-weight: 700;
   font-size: 20px;
   display: inline-block;
-margin-left: 30%;
-margin-top:60%;
+margin-left: 25%;
+margin-top:80%;
+
 }
 .iconav a:link{
-  color:#BE75FF;
+  color:black;
+  text-decoration: none;
+
 }
 .iconav a:visited{
-  color:#BE75FF;
+  color:black;
 }
 .iconav a:hover{
-  color:#9013FE;
+  color:#BE75FF;
 }
 
 h1 {
   font-size: 40px;
   font-family: 'Oswald', sans-serif;
-  color:#4A90E2;
+  color:white;
   text-align: center;
-  top:5%;
+  margin: 0;
+}
+
+p{
+  position: absolute;
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 
-.bio {
-  font-family: 'Oswald', sans-serif; font-weight: 300;
-  color: rgba(255, 255, 255, 0.02);
-  text-align: center;
-  margin-left: 50%;
-  top:15%;
-}
-.bio:hover {
-  color:black;
-}
-.bio .dream:hover {
-  color: salmon;
-  cursor: pointer;
-}
 
 .hidden
 {
@@ -74,7 +105,6 @@ display: none;
     position: absolute;
     z-index: 1;
     left: 6%;
-
     width: 450px;
     margin-top: 15%;
 
