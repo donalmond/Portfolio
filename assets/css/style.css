@@ -6,12 +6,13 @@ body
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   font-family: 'Oswald', sans-serif;
   color:black;
   text-align: left;
   margin: 0;
   margin-left: 10%;
+  margin-top: 1%;
 }
 
 h2 {
@@ -19,11 +20,13 @@ h2 {
 }
 
 p{
+  color: white;
   position: absolute;
-  font-size: 12px;
+  font-size: 16px;
 font-family: 'Open Sans', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 0;
 }
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ Initial Page ------------------------------ */
@@ -60,10 +63,8 @@ font-family: 'Open Sans', sans-serif;
     position: absolute;
     top: 30%;
     left: 49vw;
-
     width: 20vw;
     height: 20vw;
-
     transform: translate(-50%, -25%);
 }
 .cloud .bubbles
@@ -71,7 +72,6 @@ font-family: 'Open Sans', sans-serif;
     position: absolute;
     bottom: 40%;
     left: 50%;
-
     width: 45%;
     height: 45%;
 
@@ -217,12 +217,19 @@ font-family: 'Open Sans', sans-serif;
 /* ------------------------------   Bio Page   ------------------------------ */
 /* -------------------------------------------------------------------------- */
 
+.projects {
+  margin-left: 5%
+
+}
+
 .circle {
-  width: 250px;
-  height: 250px;
-  border-radius: 100px;
-  background-color: red;
-  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: black;
+  display: inline-block;
+  margin-top: 50%;
+  margin-left: 5%;
 }
 
 .tomlogo {
@@ -256,13 +263,13 @@ right: 0px;
 /* =========================== statement/ overview ========================== */
 .bio {
   font-family: 'Oswald', sans-serif; font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 1);
   text-align: left;
   margin-left: 10%;
   margin-right: 30%;
   margin-top: 5%;
-  line-height: 14px;
+  line-height: 16px;
 }
 .bio:hover {
   color:black;
@@ -279,13 +286,24 @@ color:white;
 
 
 /* =========================== navigation links ========================== */
+
+.email {
+  text-align: center;
+  margin-left: 30%;
+  top: 88%;
+  position: absolute;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  color: white;
+
+}
+
 .iconav {
-  text-align: left;
+  text-align: center;
   font-family: 'Oswald', sans-serif; font-weight: 700;
   font-size: 20px;
   display: none;
-margin-left: 10%;
-margin-top:70%;
+  margin-left: 25%;
+  margin-top:12%;
 }
 
 
