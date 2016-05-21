@@ -8,9 +8,10 @@ body
 h1 {
   font-size: 40px;
   font-family: 'Oswald', sans-serif;
-  color:white;
-  text-align: center;
+  color:black;
+  text-align: left;
   margin: 0;
+  margin-left: 10%;
 }
 
 h2 {
@@ -20,7 +21,7 @@ h2 {
 p{
   position: absolute;
   font-size: 12px;
-  font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -224,10 +225,16 @@ p{
   position: absolute;
 }
 
+.tomlogo {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: 4%;
+}
+
 /* =========================== side split div ========================== */
-.whitesidediv{
+.sidediv{
 right: 0px;
-/*prevents the potion from being hidden begind div*/
+/*allows potion to be fully clickable but restricts bio link/hover*/
   z-index: -1;
   position: absolute;
   width: 50vw;
@@ -236,11 +243,14 @@ right: 0px;
   opacity: 0;
 }
 /*fades the div in on click*/
-.revealme {
+.revealsidediv {
   transition: opacity 2s ease-in;
   -moz-transition: opacity 2s ease-in;
   -webkit-transition: opacity 2s ease-in;
   opacity: 1;
+}
+.sidedivzswap{
+  z-index: 1;
 }
 
 /* =========================== statement/ overview ========================== */
@@ -248,10 +258,11 @@ right: 0px;
   font-family: 'Oswald', sans-serif; font-weight: 300;
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-margin-top: 5%
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-top: 5%;
+  line-height: 14px;
 }
 .bio:hover {
   color:black;
@@ -269,11 +280,11 @@ color:white;
 
 /* =========================== navigation links ========================== */
 .iconav {
-  text-align: center;
+  text-align: left;
   font-family: 'Oswald', sans-serif; font-weight: 700;
   font-size: 20px;
   display: none;
-margin-left: 25%;
+margin-left: 10%;
 margin-top:70%;
 }
 

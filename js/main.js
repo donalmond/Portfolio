@@ -8,7 +8,9 @@ $(document).ready(function() {
     // shows castle
     $(".castle").addClass('reveal');
     // reveals side div
-    $(".whitesidediv").addClass('revealme');
+     $(".sidediv").addClass('revealsidediv');
+     // allows bio links/ hover to be visible/ useable
+     $(".sidediv").addClass('sidedivzswap');
     // hides nav from initial screen
     $(".iconav").css("display", "inline-block")
     // Adds delay so castle can slowly appear before floating starts
