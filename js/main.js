@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
   var p = $("#potion").click(function() {
+    // shrinks potion until scale is 0
     $('.potion').addClass('shrink');
+    // fades out bubbles
     $(".bubbles").fadeOut(2000);
-    $(".castle").addClass('hide');
-
-    $(".whitesidediv").addClass('hideme');
-
-    // Reveals
-    $(".hidden").css("display", "block")
-
-
+    // shows castle
+    $(".castle").addClass('reveal');
+    // reveals side div
+    $(".whitesidediv").addClass('revealme');
+    // hides nav from initial screen
+    $(".iconav").css("display", "inline-block")
     // Adds delay so castle can slowly appear before floating starts
     $(".castle").delay(1000).queue(function(next){
     $(this).addClass("float");
@@ -19,15 +19,15 @@ $(document).ready(function() {
   });
   });
 
-//  Jack movement
-// chuck this in the css for a smooth ride
-//
-//    -webkit-transition: left 0.1s linear, top 0.1s linear;
+//  This code below is to create a parralax effect on the clouds on mouse move
+// chuck this in the css for a smooth ride:
+//============================================================
+    //-webkit-transition: left 0.1s linear, top 0.1s linear;
     // -moz-transition: left 0.1s linear, top 0.1s linear;
     // -ms-transition: left 0.1s linear, top 0.1s linear;
     // -o-transition: left 0.1s linear, top 0.1s linear;
     // transition: left 0.1s linear, top 0.1s linear;
-
+//============================================================
 // $(document).mousemove(function (e) {
 //   var xCoord = event.pageX;
 //   var yCoord = event.pageY;
@@ -51,42 +51,3 @@ $(document).ready(function() {
 //
 // var leftIndex = 0;
 // var rightIndex = 0;
-
-
-/////////////////////// Kane Below
-
-
-
-// $( document ).mousemove(  function( event ) {
-//
-//
-//   mousePos = {
-//              x: event.pageX,
-//              y: event.pageY
-//          };
-//
-//   var x = $( window ).width() / 2;
-//   var y = $( window ).height() / 2;
-//
-//
-// if(mousePos.x >= x ){
-//   $('.castle').css("left", leftIndex+'px' )
-// leftIndex --;
-// };
-//
-// if(mousePos.x <= x ){
-//   $('.castle').css("left", leftIndex+'px' )
-//   leftIndex ++;
-// };
-//
-// // if(mousePos.y >= y ){
-// //   $('.castle').css("top", leftIndex+'px' )
-// // leftIndex --;
-// // };
-// //
-// // if(mousePos.y <= y ){
-// //   $('.castle').css("top", leftIndex+'px' )
-// //   leftIndex ++;
-// // };
-//
-// })
