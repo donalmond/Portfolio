@@ -217,6 +217,13 @@ font-family: 'Open Sans', sans-serif;
 /* ------------------------------   Bio Page   ------------------------------ */
 /* -------------------------------------------------------------------------- */
 
+.tomlogo {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: 4%;
+}
+
+/* =========================== Project  Links ========================== */
 .projects {
   margin-left: 5%
 
@@ -232,11 +239,39 @@ font-family: 'Open Sans', sans-serif;
   margin-left: 5%;
 }
 
-.tomlogo {
-  position: absolute;
-  margin-left: 65%;
-  margin-top: 4%;
+#project1 {
+  /*background: url('../images/speedr.png');*/
+  background-image: url('../images/speedr.png');
+  background-size: contain;
 }
+#project1:hover {
+  /*background-image: url();*/
+  background-color: black;
+  opacity: 0.3;
+}
+#project2 {
+  /*background: url('../images/speedr.png');*/
+  background-image: url('../images/ba.png');
+  background-size: contain;
+}
+#project2:hover {
+  /*background-image: url();*/
+  background-color: black;
+  opacity: 0.3;
+}
+#project3 {
+  /*background: url('../images/speedr.png');*/
+  background-image: url('../images/onetime.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#project3:hover {
+  /*background-image: url();*/
+  background-color: black;
+  opacity: 0.3;
+}
+
 
 /* =========================== side split div ========================== */
 .sidediv{
