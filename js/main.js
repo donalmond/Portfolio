@@ -15,10 +15,28 @@ $(document).ready(function() {
     $(".iconav").css("display", "inline-block")
     // Adds delay so castle can slowly appear before floating starts
     $(".castle").delay(1000).queue(function(next){
-    $(this).addClass("float");
-    next();
-});
+        $(this).addClass("float");
+      next();
+    });
+
   });
+
+  $("#project1").click(function () {
+     window.open("https://speedr.herokuapp.com/");
+  });
+
+  $("#project2").click(function () {
+     window.open("https://burningheirlines.herokuapp.com/");
+  });
+
+  $("#project3").click(function () {
+     window.open("https://onetimeapp.herokuapp.com/");
+  });
+
+  $("#cv").click(function () {
+     window.open("TomUlmanCV2016.pdf");
+  });
+
   });
 
 //  This code below is to create a parralax effect on the clouds on mouse move
