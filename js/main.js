@@ -21,21 +21,21 @@ $(document).ready(function() {
 
   });
 
-  $("#project1").click(function () {
-     window.open("https://speedr.herokuapp.com/");
-  });
+  // $("#project1").click(function () {
+  //    window.open("https://speedr.herokuapp.com/");
+  // });
 
-  $("#project2").click(function () {
-     window.open("https://burningheirlines.herokuapp.com/");
-  });
+  // $("#project2").click(function () {
+  //    window.open("https://burningheirlines.herokuapp.com/");
+  // });
+  //
+  // $("#project3").click(function () {
+  //    window.open("https://onetimeapp.herokuapp.com/");
+  // });
 
-  $("#project3").click(function () {
-     window.open("https://onetimeapp.herokuapp.com/");
-  });
-
-  $("#cv").click(function () {
-     window.open("TomUlmanCV2016.pdf");
-  });
+  // $("#cv").click(function () {
+  //    window.open("TomUlmanCV2016.pdf");
+  // });
 
   });
 
